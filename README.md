@@ -16,4 +16,6 @@ Cas04 - Sortiranje i binarna pretraga
 
 Cas05 - Binarna pretraga po resenju i tehnika dva pokazivaca
 
+Cas06 - Induktivno-rekurzivna konstrukcija algoritama
+
 
