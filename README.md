@@ -18,4 +18,6 @@ Cas05 - Binarna pretraga po resenju i tehnika dva pokazivaca
 
 Cas06 - Induktivno-rekurzivna konstrukcija algoritama
 
+Cas07 - Strukture podataka; Stek; Red; Red sa prioritetom
+
 
