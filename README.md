@@ -22,6 +22,8 @@ Cas07 - Strukture podataka: Stek; Red; Red sa prioritetom
 
 Cas08 - Strukture podataka: Skup; Mapa
 
+Cas09 - Dekompozicija
+
 Petlja - Razni zadaci sa Petlje razvrstani po oblastima
 
 
