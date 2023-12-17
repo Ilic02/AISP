@@ -5,6 +5,10 @@ const int n = 9;
 
 using namespace std;
 
+bool provera(vector<string>&s , int i, int j){
+    // 
+}
+
 bool sudoku(vector<string>& s, int pos){
     int i = pos / n, j = pos % n;
 
