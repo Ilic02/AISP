@@ -24,6 +24,8 @@ Cas08 - Strukture podataka: Skup; Mapa
 
 Cas09 - Dekompozicija
 
+Cas10 - Pretraga
+
 Petlja - Razni zadaci sa Petlje razvrstani po oblastima
 
 
