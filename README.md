@@ -26,6 +26,10 @@ Cas09 - Dekompozicija
 
 Cas10 - Pretraga
 
+Cas11 - Dinamicko programiranje
+
+Cas12 - Pohlepni algoritmi
+
 Petlja - Razni zadaci sa Petlje razvrstani po oblastima
 
 
