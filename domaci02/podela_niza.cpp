@@ -1,36 +1,33 @@
 #include <iostream>
 #include <deque>
-#include <algorithm>
 
 using namespace std;
 
-int zbirVektora(vector<int>& v){
-    int zbir = 0;
-    for(int i = 0; i<v.size(); i++)
-        zbir += v[i];
-
-    return zbir;
-}
-
 int main(){
-    int n;
+    int n, x;
     cin >> n;
+    int N = n;
 
     deque <int> d;
 
     while(n--){
-        int x;
         cin >> x;
         d.push_back(x);
     }
 
-    int zbir1 = d.front();
-    int zbir2 = d.back();
-    d.pop_back();
-    d.pop_front();
+    int zbir1 = d.back(), zbir2 = d.front();
 
+    while(!d.empty()){
+        d.pop_back();
+        d.pop_front();
+        if(zbir1 > zbir2){
+            zbir2 += d.front();
+        }
+        else if(zbir2 > zbir1)
+            zbir1 += d.back();
+    }
 
-    cout << zbir1 << " " << zbir2 << endl;
-
+    cout << zbir1 << endl << zbir2 << endl;
+    
     return 0;
 }
