@@ -1,26 +1,34 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main (){
+int main()
+{
     ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
     int n;
     cin >> n;
-
     vector<int> v(n);
-    for(int i = 0; i<n; i++)
+
+    for(int i=0;i<n;i++)
         cin >> v[i];
-
-    int brLetova = 0;
-
-    for(int i = 0; i<n; i++){
-        for(int j = 1; j<n; j++)
-            if(abs(v[i] - v[1] >= j))
-                brLetova++;
+    
+    int brojac = 0;
+    for(int i=0;i<n-1;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(v[j]-v[i]>=j-i)
+            {
+                brojac++;
+                
+            }
+        }
     }
 
-    cout << brLetova << endl;
-
+    cout << brojac << endl;
     return 0;
-}
+} 

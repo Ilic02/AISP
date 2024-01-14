@@ -1,33 +1,38 @@
-#include <iostream>
-#include <deque>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main(){
-    int n, x;
+int main()
+{
+    int n;
     cin >> n;
-    int N = n;
 
-    deque <int> d;
+    int sol = 0;
+    vector<int> a(n);
+    vector<int> pfs(n);
+    vector<int> pfsx(n);
+    // map<pfs[i], i> m;
+    map<int, int> m;
 
-    while(n--){
-        cin >> x;
-        d.push_back(x);
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+
+    pfs[0] = a[0];
+    for (int i = 1; i < n; i++)
+    {
+        pfs[i] = pfs[i - 1] + a[i];
+        m[pfs[i]] = i;
     }
-
-    int zbir1 = d.back(), zbir2 = d.front();
-
-    while(!d.empty()){
-        d.pop_back();
-        d.pop_front();
-        if(zbir1 > zbir2){
-            zbir2 += d.front();
-        }
-        else if(zbir2 > zbir1)
-            zbir1 += d.back();
-    }
-
-    cout << zbir1 << endl << zbir2 << endl;
     
+    pfsx[n - 1] = a[n - 1];
+    for (int j = n - 2; j >= 0; j--)
+    {
+        pfsx[j] = pfsx[j + 1] + a[j];
+        if (m.find(pfsx[j]) != m.end() && j > m[pfsx[j]])
+        {
+            sol = max(sol, pfsx[j]);
+        }
+    }
+    cout << sol << endl;
     return 0;
 }
