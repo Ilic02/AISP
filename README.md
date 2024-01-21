@@ -32,4 +32,6 @@ Cas12 - Pohlepni algoritmi
 
 Petlja - Razni zadaci sa Petlje razvrstani po oblastima
 
+Rokovi - Uradjeni neki rokovi 
+
 
