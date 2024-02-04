@@ -1,25 +1,25 @@
 #include <iostream>
-#include <queue>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main(){
-    int n, k;
+int main(int argc, char const *argv[])
+{
+    int n,k;
     cin >> n >> k;
 
-    priority_queue<int> p;
+    vector<int> v(n);
+    for(int i = 0; i<n; i++)
+        cin >> v[i];
 
-    while(n--){
-        int x;
-        cin >> x;
-        p.push(x);
-    }
+    sort(rbegin(v), rend(v));
 
     int zbir = 0;
-    while(k--){
-        zbir += p.top();
-        p.pop();
-    }
+
+    for(int i = 0; i<k; i++)
+        zbir += v[i];
+
 
     cout << zbir << endl;
 
