@@ -34,4 +34,8 @@ Petlja - Razni zadaci sa Petlje razvrstani po oblastima
 
 Rokovi - Uradjeni neki rokovi 
 
+Domaci 1, 2, 3 - Domaci zadaci iz 2023/24 godine
+
+Usmeni - primeri za pitanja (Minimalni nivo)
+
 
